@@ -629,8 +629,23 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
      text-align: center;
-     border-bottom: 7px solid #1fff9a;
+     border-bottom: 3px solid #1fff9a;
 }
+
+@media (min-width: 37.5em) {
+
+.header-details {
+        border-bottom: 5px solid #1fff9a 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+}
+    }
+
+@media (min-width: 75em) {
+
+.header-details {
+        border-bottom: 7px solid #1fff9a  /*1200*/
+}
+    }
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), 
     (min-resolution: 192dpi) and (min-width: 37.5em), 
