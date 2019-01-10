@@ -4,9 +4,6 @@
     color: $color-orange;
     margin-bottom: 1.5em;
 
-     @mixin atLarge {
-        /* padding: 4rem 0; */
-    }
 
     &--centered {
         text-align: center;

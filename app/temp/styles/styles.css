@@ -853,14 +853,6 @@ html, body {
     
 }
 
-@media (min-width: 75em) {
-
-.headline {
-        /* padding: 4rem 0; */  /*1200*/
-    
-}
-    }
-
 .headline--centered {
         text-align: center;
         font-weight:100;
