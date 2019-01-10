@@ -1,0 +1,42 @@
+.U-page-section {
+    padding: 1.2rem 0;
+
+    @mixin atMedium {
+        padding: 4.5rem 0;
+    }
+}
+
+.U-image-resize {
+    width: 40rem;
+
+     @mixin atSmall {
+        width: 60rem;
+    }
+
+    &--main {
+            @mixin atMedium {
+            width: 80rem;
+        }   
+
+         @mixin atLarge {
+        width: 120rem;
+    }
+
+    }
+
+     &--sub {
+            @mixin atMedium {
+            width: 40rem;
+            height: 38rem;
+        }   
+
+    }
+     
+}
+
+
+.U-margin-left {
+    margin-left: 1.5rem;
+}
+
+

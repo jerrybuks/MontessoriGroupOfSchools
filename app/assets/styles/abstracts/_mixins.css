@@ -1,0 +1,18 @@
+@define-mixin atSmall {
+    @media (min-width: 37.5em) {
+        @mixin-content; 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+    }
+}
+
+@define-mixin atMedium {
+    @media (min-width: 56.25em) {
+        @mixin-content; /*900*/
+    }
+}
+
+@define-mixin atLarge {
+    @media (min-width: 75em) {
+        @mixin-content;  /*1200*/
+    }
+}

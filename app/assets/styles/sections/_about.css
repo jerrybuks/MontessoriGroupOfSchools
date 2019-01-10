@@ -1,0 +1,10 @@
+.about-story {
+
+
+    @mixin atMedium {
+        display: flex;
+        margin-top: 2rem;
+        flex: 1;
+    }
+
+}

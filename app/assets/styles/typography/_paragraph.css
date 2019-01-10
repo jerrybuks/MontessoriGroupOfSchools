@@ -1,0 +1,14 @@
+.paragraph {
+    line-height: 1.65;
+    font-size: 1.6rem;
+    margin: 1.6rem 0;
+
+    @mixin atSmall {
+        font-size: 1.8rem;
+    }
+
+    &__link{
+        font-weight: 700;
+        color: $color-orange;
+    }
+}

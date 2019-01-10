@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem 1rem;
+    background-color: #000;
+    transition: all 0.2s;
+    animation-name: moveInBottom;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+
+    &:hover {
+        transform: translateY(-3px);
+        /*in css to go up in the y direction is negative. this specifies what we want the transition to look like in the hover state */
+        box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
+        /* the setting is: x y blur color */
+        background-color: $color-primary-hover;
+    }
+    
+}

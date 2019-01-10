@@ -1,0 +1,15 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50%;  /* 1 rem = 9px; 9/16 = 56.25% */
+    color: #333;
+    height: 100%;
+
+    @mixin atMedium{
+         font-size: 56.25%;  /* 1 rem = 9px; 9/16 = 56.25% */
+     }
+
+     @mixin atLarge{
+         font-size: 62.5%;  /* 1 rem = 10px; 10/16 = 56.25% */
+     }
+}
+

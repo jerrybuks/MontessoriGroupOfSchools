@@ -1,0 +1,81 @@
+
+.header-details {
+    display: flex;
+    height:80vh;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../assets/images/school--Small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+     text-align: center;
+     border-bottom: 7px solid $color-secondary;
+
+
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), 
+    (min-width: 56.25em) {
+        background-image: linear-gradient( to right top, rgba(0, 0, 0  , 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/school--large.jpg);
+    }
+
+
+    &__title {
+        font-weight: 300;
+        color: $color-primary;
+        font-size: 3.5rem;
+        margin: 0;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-delay: 0.1s;
+
+        @mixin atSmall{
+         font-size: 5.2rem;
+     }
+
+        @mixin atMedium{
+         font-size: 5.5rem;
+     }
+
+        @mixin atLarge{
+         font-size: 6rem;
+     }
+    }
+    
+
+    &__subtitle {
+        font-weight: 300;
+        color: $color-primary;
+        font-size: 1.8rem;
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+        animation-delay: 0.1s;
+
+
+        @mixin atMedium{
+         font-size: 2rem;
+     }
+
+        @mixin atLarge{
+         font-size: 2.2rem;
+     }
+    }
+        
+
+    &__description {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0,0, 0, .1 );
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+        animation-delay: 0.1s;
+
+        @mixin atLarge{
+         font-size: 1.8rem;
+     }
+    }
+}
+
+
+
+
