@@ -1,0 +1,22 @@
+
+.container {
+    width: 100%;
+}
+
+.columns {
+    display: block;
+
+    @mixin atSmall {
+        display: flex;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+}
+
+.column-1-2{
+    flex:1;
+    justify-content: center;
+    padding: 2.5rem;
+}

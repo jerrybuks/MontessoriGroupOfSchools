@@ -1,4 +1,22 @@
 .section-features {
-    background-color: $color-primary;
-    color: #fff;
+    background-color: $color-milk;
+    color: #bababa;
+    padding: 1.2rem;
+
+    &__heading{
+        font-size: 3.2rem;
+        font-weight: 300;
+        color: #696969;
+
+        &--strong{
+            font-weight: 600;
+        }
+    }
+
+    &__body {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: #000;
+        line-height: 1.65;
+    }
 }
