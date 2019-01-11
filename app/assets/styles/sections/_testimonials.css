@@ -1,0 +1,43 @@
+.section-testimonials{
+
+     &--heading{
+
+        @mixin atMedium {
+            margin-top: -3rem;  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/
+        }
+    }
+
+    &--body{
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+    &--box{
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,.3);
+        border-radius: 5px;
+        margin: 2.5rem;
+        padding: 1rem;
+
+        @mixin atSmall {
+            margin: 1.8rem;
+        }
+
+    }
+
+    &--image{
+        margin-top: 1rem;
+        border-radius: 50%;
+    }
+
+    &--h3{
+        font-weight: 400;
+    }
+
+    &--position {
+        text-align: right;
+    }
+}
+
+

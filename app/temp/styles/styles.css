@@ -542,7 +542,7 @@ html, body {
 @media (min-width: 56.25em) {
 
 .U-page-section {
-        padding: 4.5rem 0 /*900*/
+        padding: 4rem 0 /*900*/
 }
     }
 
@@ -655,6 +655,23 @@ html, body {
             justify-content: center;
     padding: 2.5rem;
 }
+
+.column-1-3{
+    display: block;
+}
+
+@media (min-width: 56.25em) {
+
+.column-1-3{
+        -webkit-box-flex:1;
+            -ms-flex:1;
+                flex:1;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 2.5rem /*900*/
+}
+    }
 
 .header-details {
     display: -webkit-box;
@@ -856,6 +873,14 @@ html, body {
         color: #696969;
     }
 
+@media (min-width: 37.5em) {
+
+.section-features__heading{
+            margin-bottom: -2rem 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+    }
+    }
+
 .section-features__heading--strong{
             font-weight: 600;
         }
@@ -865,6 +890,51 @@ html, body {
         font-weight: 300;
         color: #000;
         line-height: 1.65;
+    }
+
+@media (min-width: 56.25em) {
+
+.section-testimonials--heading{
+            margin-top: -3rem  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/ /*900*/
+    }
+    }
+
+.section-testimonials--body{
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+.section-testimonials--box{
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.3);
+                box-shadow: 0 2px 6px rgba(0,0,0,.3);
+        border-radius: 5px;
+        margin: 2.5rem;
+        padding: 1rem;
+
+    }
+
+@media (min-width: 37.5em) {
+
+.section-testimonials--box{
+            margin: 1.8rem 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+
+    }
+    }
+
+.section-testimonials--image{
+        margin-top: 1rem;
+        border-radius: 50%;
+    }
+
+.section-testimonials--h3{
+        font-weight: 400;
+    }
+
+.section-testimonials--position {
+        text-align: right;
     }
 
 @media (min-width: 56.25em) {

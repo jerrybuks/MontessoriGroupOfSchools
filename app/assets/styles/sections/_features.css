@@ -8,6 +8,10 @@
         font-weight: 300;
         color: #696969;
 
+        @mixin atSmall {
+            margin-bottom: -2rem;
+        }
+
         &--strong{
             font-weight: 600;
         }
