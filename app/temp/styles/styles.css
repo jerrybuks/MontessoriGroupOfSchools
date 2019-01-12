@@ -595,10 +595,19 @@ html, body {
 
 .U-image-svg {
     width: 3.5rem;
+    color: #d59541;
+}
+
+.U-image-svg--small{
+    width: 2rem;
 }
 
 .U-text-align-center {
     text-align: center;
+}
+
+.U-padding-form-big {
+    padding: 2rem;
 }
 
 .wrapper {
@@ -685,8 +694,8 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../../assets/images/school--Small.jpg);
-     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../assets/images/school--Small.jpg);
+     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--Small.jpg);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--Small.jpg);
     background-size: cover;
     background-repeat: no-repeat;
      text-align: center;
@@ -848,7 +857,6 @@ html, body {
             animation-duration: 2s;
     -webkit-animation-delay: 0.1s;
             animation-delay: 0.1s;
-    
 }
 
 .btn:hover {
@@ -859,6 +867,14 @@ html, body {
                 box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
         /* the setting is: x y blur color */
         background-color: #808080;
+    }
+
+.btn--form {
+        padding: 1.2rem 2.2rem; 
+        font-size: 1.8rem;
+        color: #000;
+        background-color: #e3e3e3;
+        border-radius: 5px;
     }
 
 .section-features {
@@ -895,7 +911,7 @@ html, body {
 @media (min-width: 56.25em) {
 
 .section-testimonials--heading{
-            margin-top: -3rem  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/ /*900*/
+            margin-top: -1rem  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/ /*900*/
     }
     }
 
@@ -950,6 +966,79 @@ html, body {
 
 }
     }
+
+@media (min-width: 56.25em) {
+
+.section-form__heading{
+            margin-top: -1rem  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/ /*900*/
+    }
+    }
+
+.section-form__body {
+            display: block;
+            margin-bottom: 3rem;
+        }
+
+.section-form__body-property {
+                font-size: 2.5rem;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                width: 40rem;
+                
+            }
+
+@media (min-width: 37.5em) {
+
+.section-form__body-property {
+                    width: 50rem 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+                
+            }
+    }
+
+.section-form__body-property-input {
+                    font-size: 1.5rem;
+                    width: 100%;
+                }
+
+.section-form__body-property-input:focus {
+                        outline: 1px solid #f39c1d;
+                    }
+
+.section-form__body-property-addon{
+                    background-color: #e3e3e3;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+
+                }
+
+.section-form__body-property>* {
+                    padding: .4em;
+                }
+
+.form-center {
+     
+    display: -webkit-box;
+     
+    display: -ms-flexbox;
+     
+    display: flex;
+    align-item: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+}
+
+.section-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 8rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
 
 .headline {
     font-weight: 300;

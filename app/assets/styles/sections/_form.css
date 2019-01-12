@@ -1,0 +1,55 @@
+
+.section-form {
+
+    &__heading{
+
+            @mixin atMedium {
+            margin-top: -1rem;  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/
+        }
+    }
+
+    &__body {
+            display: block;
+            margin-bottom: 3rem;
+
+            &-property {
+                font-size: 2.5rem;
+                display: flex;
+                width: 40rem;
+
+
+                @mixin atSmall {
+                    width: 50rem;
+                }
+
+                &-input {
+                    font-size: 1.5rem;
+                    width: 100%;
+
+                     &:focus {
+                        outline: 1px solid #f39c1d;
+                    }
+                }
+                
+
+                &-addon{
+                    background-color: #e3e3e3;
+                    align-items: center;
+
+                }
+
+                &>* {
+                    padding: .4em;
+                }
+                
+            }
+        }
+}
+
+.form-center {
+     
+    display: flex;
+    align-item: center;
+    justify-content: center;
+
+}

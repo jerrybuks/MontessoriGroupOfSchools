@@ -3,7 +3,7 @@
      &--heading{
 
         @mixin atMedium {
-            margin-top: -3rem;  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/
+            margin-top: -1rem;  /* this corrects the default margin-top that  comes with h3 elements, which in our case dosent look good on medium and large screens*/
         }
     }
 

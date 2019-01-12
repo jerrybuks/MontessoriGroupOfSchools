@@ -45,10 +45,20 @@
 
 .U-image-svg {
     width: 3.5rem;
+    color: #d59541;
+}
+
+.U-image-svg--small{
+    width: 2rem;
 }
 
 .U-text-align-center {
     text-align: center;
 }
+
+.U-padding-form-big {
+    padding: 2rem;
+}
+
 
 
