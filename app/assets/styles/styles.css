@@ -1,3 +1,4 @@
+
 @import "normalize.css";
 @import "abstracts/_variables";
 @import "abstracts/_mixins";
@@ -15,8 +16,10 @@
 @import "sections/_about";
 @import "sections/_form";
 @import "sections/_features";
+@import "sections/_reveal-items";
 @import "layout/_footer";
 @import "typography/_headline";
-@import "typography/_paragraph";
+@import "typography/_paragraph"
+
 
 

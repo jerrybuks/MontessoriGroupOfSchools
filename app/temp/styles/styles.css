@@ -960,6 +960,14 @@ html, body {
             display: none;
         }
 
+.nav-bar__ul .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
 .section-features {
     background-color: #f9f9f9;
     color: #bababa;
@@ -1117,6 +1125,20 @@ html, body {
 
 }
 
+.reveal-item {
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
 .section-footer {
     background-color: #000;
     color: #fff;
@@ -1168,5 +1190,6 @@ html, body {
         font-weight: 700;
         color: #f39c1d;
     }
+
 
 
