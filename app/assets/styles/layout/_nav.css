@@ -1,35 +1,38 @@
 .nav-bar {
-    background-color: $color-primary;
+
+    @mixin atSmall {
+        background-color: $colorPrimary;
+    }
+
 
     &__ul {
-        display: block;
+        display: none;
         margin: 0;
         padding: 1.4rem;
         list-style: none;
         font-size: 1.4rem;
         font-weight: 300;
+        
+        @mixin atSmall {
+            display: flex;
+        }
 
-        @mixin atSmall{
-           display: flex;
-     }
 
-        @mixin atMedium{
-           display: flex;
-     }
-
-         @mixin atLarge{
-           display: flex;
-     }
     }
 
     &__li {
         text-align: center;
         text-transform: uppercase;
-        
 
-        &:not(:last-child) {
-            padding-right: 6.5rem;
+
+        @mixin atSmall {
+            &:not(:last-child) {
+                padding-right: 6.5rem;
+            }
         }
+
+
+
     }
 
     &__link {

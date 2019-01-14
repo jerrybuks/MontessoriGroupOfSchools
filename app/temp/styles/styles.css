@@ -686,7 +686,7 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height:80vh;
+    height:50vh;
     max-width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -694,12 +694,36 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--Small.jpg);
-     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--Small.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--Smaller.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--Smaller.jpg);
     background-size: cover;
     background-repeat: no-repeat;
      text-align: center;
 }
+
+@media (min-width: 37.5em) {
+
+.header-details {
+        height: 80vh 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+}
+    }
+
+@media (min-width: 56.25em) {
+
+.header-details {
+         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--small.jpg);
+         background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--small.jpg) /*900*/
+}
+    }
+
+@media (min-width: 56.25em) {
+
+.header-details {
+         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--large.jpg);
+         background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--large.jpg) /*900*/
+}
+    }
 
 .header-details__title {
         font-weight: 300;
@@ -765,7 +789,7 @@ html, body {
 .header-details__description {
         color: #fff;
         font-size: 1.5rem;
-        font-weight: 100;
+        font-weight: 300;
         text-shadow: 2px 2px 0 rgba(0,0, 0, .1 );
         -webkit-animation-name: moveInBottom;
                 animation-name: moveInBottom;
@@ -782,56 +806,58 @@ html, body {
     }
     }
 
+@media (min-width: 37.5em) {
+
 .nav-bar {
-    background-color: #56ffa2;
+        background-color: #56ffa2 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
 
 }
+    }
 
 .nav-bar__ul {
-        display: block;
+        display: none;
         margin: 0;
         padding: 1.4rem;
         list-style: none;
         font-size: 1.4rem;
         font-weight: 300;
+
+
     }
 
 @media (min-width: 37.5em) {
 
 .nav-bar__ul {
-           display: -webkit-box;
-           display: -ms-flexbox;
-           display: flex 
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex 
         /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
-    }
-    }
 
-@media (min-width: 56.25em) {
 
-.nav-bar__ul {
-           display: -webkit-box;
-           display: -ms-flexbox;
-           display: flex /*900*/
-    }
-    }
-
-@media (min-width: 75em) {
-
-.nav-bar__ul {
-           display: -webkit-box;
-           display: -ms-flexbox;
-           display: flex  /*1200*/
     }
     }
 
 .nav-bar__li {
         text-align: center;
         text-transform: uppercase;
+
+
+
     }
 
-.nav-bar__li:not(:last-child) {
-            padding-right: 6.5rem;
-        }
+@media (min-width: 37.5em) {
+
+.nav-bar__li { 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+
+
+
+    }
+            .nav-bar__li:not(:last-child) {
+                padding-right: 6.5rem;
+            }
+    }
 
 .nav-bar__link {
         text-decoration: none;
@@ -876,6 +902,63 @@ html, body {
         background-color: #e3e3e3;
         border-radius: 5px;
     }
+
+.nav-bar__menu-icon {    
+        color: #FFF;
+        position: absolute;
+        top: 5px;
+        padding-left: 5px;
+    }
+
+@media (min-width: 37.5em) {
+
+.nav-bar__menu-icon {
+            display: none 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+    }
+    }
+
+.nav-bar__ul--is-visible {
+            display: block; 
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f9f9f9;
+            font-size: 1rem;
+            overflow-x: hidden;
+            padding-top: 60px;
+
+       }
+
+@media (min-width: 37.5em) {
+
+.nav-bar__ul--is-visible {
+               display: -webkit-box;
+               display: -ms-flexbox;
+               display: flex 
+        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+
+       }
+    }
+
+.nav-bar__ul--is-visible li a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 2.2rem;
+                color: #818181;
+                display: block;
+            }
+
+.nav-bar__ul--is-visible li a:hover {
+                    color: #000;
+                }
+
+.nav-bar__ul--is-expanded {
+            display: none;
+        }
 
 .section-features {
     background-color: #f9f9f9;
@@ -1025,7 +1108,9 @@ html, body {
     display: -ms-flexbox;
      
     display: flex;
-    align-item: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1083,6 +1168,5 @@ html, body {
         font-weight: 700;
         color: #f39c1d;
     }
-
 
 

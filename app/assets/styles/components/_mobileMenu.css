@@ -1,0 +1,57 @@
+.nav-bar {
+    
+   
+
+    &__menu-icon {    
+        color: #FFF;
+        position: absolute;
+        top: 5px;
+        padding-left: 5px;
+
+        @mixin atSmall {
+            display: none;
+        }
+    }
+
+    &__ul {        
+
+         &--is-visible {
+            display: block; 
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f9f9f9;
+            font-size: 1rem;
+            overflow-x: hidden;
+            padding-top: 60px;
+
+         @mixin atSmall{
+               display: flex;
+           }
+
+        li a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 2.2rem;
+                color: #818181;
+                display: block;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+
+       }
+
+
+        &--is-expanded {
+            display: none;
+        }
+
+    }
+
+
+}
