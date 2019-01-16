@@ -7,6 +7,7 @@ class MObileMenu {
         this.menuContent = $(".nav-bar__ul");
         this.navBarLink = $(".nav-bar__link");
         this.events();
+        this.removeNavUlVisible();
     }
 
     events() {
@@ -18,13 +19,10 @@ class MObileMenu {
 
         if(window.matchMedia("(max-width: 900px)").matches) {
 
-            this.menuContent.toggleClass("nav-bar__ul--is-visible");
-
-
             if ( "nav-bar__ul--is-expanded") {
                 this.menuContent.removeClass("nav-bar__ul--is-expanded");
-                this.menuContent.addClass("nav-bar__ul--is-visible");
-            }
+                this.menuContent.toggleClass("nav-bar__ul--is-visible");
+            } 
         } 
     
     }
@@ -35,6 +33,17 @@ class MObileMenu {
             this.menuContent.addClass("nav-bar__ul--is-expanded");
         }
     }
+
+    removeNavUlVisible() {
+        var _this = this;
+            $(window).on('resize', function () {
+                var win = $(this);
+                if(win.width() >= 900) {
+                    _this.menuContent.removeClass("nav-bar__ul--is-visible");
+                }
+            });
+        }
 }
+
 
 export default MObileMenu

@@ -16,17 +16,17 @@
       <div class="nav-bar__menu-icon"><span style="font-size:30px;cursor:pointer">&#9776;</span></div>
       <ul class="nav-bar__ul">
         <a href="javascript:void(0)" class="nav-bar__link closebtn">&times;</a>
-        <li class="nav-bar__li"> <a href="#" class="nav-bar__link" >Home</a></li>
-        <li class="nav-bar__li"><a href="#our-beginning"  class="nav-bar__link">about us</a></li>
-        <li class="nav-bar__li"><a href="#features"  class="nav-bar__link">Features</a></li>
-        <li class="nav-bar__li"><a href="#testimonials"  class="nav-bar__link">Testimonials</a></li>
-        <li class="nav-bar__li"><a href="#testimonials"  class="nav-bar__link">contact us</a></li>
+        <li class="nav-bar__li"> <a href="#Home" class="nav-bar__link">Home</a></li>
+        <li class="nav-bar__li"><a href="#about-us"  class="nav-bar__link" id="about-link">about us</a></li>
+        <li class="nav-bar__li"><a href="#features"  class="nav-bar__link" id="features-link">Features</a></li>
+        <li class="nav-bar__li"><a href="#testimonials"  class="nav-bar__link" id="testimonials-link">Testimonials</a></li>
+        <li class="nav-bar__li"><a href="#contact"  class="nav-bar__link" id="contact-link">contact us</a></li>
       </ul>
     </nav>
 
-  <header>
+  <header id="Home" class="page-section">
     <!-- <img src="assets/images/icons/clear-view-escapes.svg"> -->
-    <div class="header-details">
+    <div " class="header-details">
       <div class="header-details__test-content">
         <h1 class="header-details__title">Welcome to Montessori</h1>
         <h2 class="header-details__subtitle">Get your Kid enrolled in the best school</h2>
@@ -36,9 +36,9 @@
     </div>
   </header>
 
-  <section class="U-page-section"> <!--about us section-->
-    <div id="our-beginning" class="wrapper">
-      <h2 class="headline headline--centered">Get to know us Better</h2>
+  <section id="about-us" class="U-section-margin page-section" data-match-link="#about-link"> <!--about us section-->
+    <div id="our-beginning" class=" about wrapper">
+      <h2 class="headline headline--centered">ABOUT US</h2>
       <div class="wrapper wrapper--centered">
         <picture>
           <source srcset="assets/images/school-enviroment-1920.jpg 1920w, " media= "(min-width: 1200px)">
@@ -65,8 +65,8 @@
     </div>
   </section>
 
-  <section class="U-page-section">
-    <div id="features" class="section-features">
+  <section id="features" class="U-section-margin page-section" data-match-link="#features-link">
+    <div  class="section-features">
       <div class="wrapper">
         <div class="headline headline--centered section-features__heading">
           <h2 class="section-features__heading"><img class="U-image-svg U-margin-right" src="assets/images/icons/star.svg">Our <strong class="section-features__heading--strong">Features</strong></h2>    
@@ -110,8 +110,8 @@
     </div>
   </section>  
 
-  <section class="U-page-section section-testimonials">
-      <div id="testimonials">
+  <section id="testimonials" class="U-section-margin page-section section-testimonials" data-match-link="#testimonials-link">
+      <div>
         <h2 class="headline headline--centered  section-testimonials--heading"> Testimonials</h2>
         
         <div class="container  section-testimonials--body">
@@ -142,7 +142,7 @@
       </div>    
   </section>
 
-  <section class="U-page-section section-form">
+  <section id="contact" class="U-section-margin page-section section-form" data-match-link="#contact-link">
     <div>
           <h2 class="headline headline--centered section-form__heading"> We are open for a DM</h2>
     </div>
@@ -174,7 +174,7 @@
   </div>
   </section>
   
-  <footer class="U-page-section section-footer">
+  <footer class="U-section-margin section-footer">
     <p>Copyright &copy; 2018 MontessoriGroupOfSchools. All rights reserved.</p>
   </footer>
   <script src="/temp/scripts/App.js"></script>

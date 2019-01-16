@@ -1,6 +1,7 @@
 .nav-bar {
 
     @mixin atMedium {
+        position: fixed;
         background-color: $colorPrimary;
     }
 

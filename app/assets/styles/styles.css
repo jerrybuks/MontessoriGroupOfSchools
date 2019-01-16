@@ -8,7 +8,6 @@
 @import "base/_wrapper";
 @import "base/_grid";
 @import "layout/_header";
-@import "layout/_nav";
 @import "components/_button";
 @import "components/_mobileMenu";
 @import "sections/_features";
