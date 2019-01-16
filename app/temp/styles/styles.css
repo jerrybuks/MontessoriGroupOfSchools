@@ -806,11 +806,10 @@ html, body {
     }
     }
 
-@media (min-width: 37.5em) {
+@media (min-width: 56.25em) {
 
 .nav-bar {
-        background-color: #56ffa2 
-        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+        background-color: #56ffa2 /*900*/
 
 }
     }
@@ -826,13 +825,12 @@ html, body {
 
     }
 
-@media (min-width: 37.5em) {
+@media (min-width: 56.25em) {
 
 .nav-bar__ul {
             display: -webkit-box;
             display: -ms-flexbox;
-            display: flex 
-        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+            display: flex /*900*/
 
 
     }
@@ -846,10 +844,9 @@ html, body {
 
     }
 
-@media (min-width: 37.5em) {
+@media (min-width: 56.25em) {
 
-.nav-bar__li { 
-        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+.nav-bar__li { /*900*/
 
 
 
@@ -910,11 +907,10 @@ html, body {
         padding-left: 5px;
     }
 
-@media (min-width: 37.5em) {
+@media (min-width: 56.25em) {
 
 .nav-bar__menu-icon {
-            display: none 
-        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+            display: none /*900*/
     }
     }
 
@@ -933,13 +929,20 @@ html, body {
 
        }
 
-@media (min-width: 37.5em) {
+@media (min-width: 56.25em) {
 
 .nav-bar__ul--is-visible {
                display: -webkit-box;
                display: -ms-flexbox;
-               display: flex 
-        /* 600px  (600/16 (i.e browser default font-size) = 37.5em) ; */
+               display: flex;
+               background-color: #56ffa2;
+                height: 2rem;
+                width: 100%;
+                margin: 0;
+                padding: 1.4rem;
+                list-style: none;
+                font-size: 1rem;
+                font-weight: 300 /*900*/
 
        }
     }
@@ -952,13 +955,33 @@ html, body {
                 display: block;
             }
 
+@media (min-width: 56.25em) {
+
+.nav-bar__ul--is-visible li a {
+                    padding: 0;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    color: #000 /*900*/
+            }
+    }
+
 .nav-bar__ul--is-visible li a:hover {
-                    color: #000;
+                   
+                    color: #808080;
                 }
 
 .nav-bar__ul--is-expanded {
             display: none;
         }
+
+@media (min-width: 56.25em) {
+
+.nav-bar__ul--is-expanded {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex /*900*/
+        }
+    }
 
 .nav-bar__ul .closebtn {
             position: absolute;
@@ -967,6 +990,13 @@ html, body {
             font-size: 36px;
             margin-left: 50px;
           }
+
+@media (min-width: 56.25em) {
+
+.nav-bar__ul .closebtn {
+                    display: none /*900*/
+          }
+    }
 
 .section-features {
     background-color: #f9f9f9;

@@ -15,19 +15,25 @@ class MObileMenu {
     }
 
     toggleTheMenu() {
-        this.menuContent.toggleClass("nav-bar__ul--is-visible");
+
+        if(window.matchMedia("(max-width: 900px)").matches) {
+
+            this.menuContent.toggleClass("nav-bar__ul--is-visible");
 
 
-        if ( "nav-bar__ul--is-expanded") {
-            this.menuContent.removeClass("nav-bar__ul--is-expanded");
-            this.menuContent.addClass("nav-bar__ul--is-visible");
-        }
-        
+            if ( "nav-bar__ul--is-expanded") {
+                this.menuContent.removeClass("nav-bar__ul--is-expanded");
+                this.menuContent.addClass("nav-bar__ul--is-visible");
+            }
+        } 
+    
     }
 
     closeTheNav() {
     //     this.menuContent.toggleClass("nav-bar__ul--is-expanded").toggleClasss("nav-bar__ul--is-close");
-    this.menuContent.addClass("nav-bar__ul--is-expanded");
+    if(window.matchMedia("(max-width: 900px)").matches) {
+            this.menuContent.addClass("nav-bar__ul--is-expanded");
+        }
     }
 }
 

@@ -8,7 +8,7 @@
         top: 5px;
         padding-left: 5px;
 
-        @mixin atSmall {
+        @mixin atMedium {
             display: none;
         }
     }
@@ -28,8 +28,16 @@
             overflow-x: hidden;
             padding-top: 60px;
 
-         @mixin atSmall{
+         @mixin atMedium{
                display: flex;
+               background-color: $colorPrimary;
+                height: 2rem;
+                width: 100%;
+                margin: 0;
+                padding: 1.4rem;
+                list-style: none;
+                font-size: 1rem;
+                font-weight: 300;
            }
 
         li a {
@@ -39,8 +47,16 @@
                 color: #818181;
                 display: block;
 
-                &:hover {
+                @mixin atMedium {
+                    padding: 0;
+                    font-size: 1.4rem;
+                    text-decoration: none;
                     color: #000;
+                }
+
+                &:hover {
+                   
+                    color: $color-primary-hover;
                 }
             }
 
@@ -49,6 +65,10 @@
 
         &--is-expanded {
             display: none;
+
+                @mixin atMedium {
+                display: flex;
+            }
         }
 
 
@@ -58,6 +78,10 @@
             right: 25px;
             font-size: 36px;
             margin-left: 50px;
+
+             @mixin atMedium {
+                    display: none;
+                }
           }
 
     }
