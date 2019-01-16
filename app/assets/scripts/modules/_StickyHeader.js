@@ -4,6 +4,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 
 class stickyHeader {
     constructor(){
+        this.lazyImages = $(".lazyload")
         this.navBar = $(".nav-bar");
         this.TriggerFixedHeader = $('.about');
         this.createHeaderWaypoint();
@@ -11,6 +12,13 @@ class stickyHeader {
         this.navLinks = $(".nav-bar__link");
         this.createPageSectionsWaypoints();
         this.smoothScrollinng();
+        this.refreshWaypoints();
+    }
+
+    refreshWaypoints() {
+        this.lazyImages.on('load', function() {
+            Waypoint.refreshAll();
+        });
     }
 
     createHeaderWaypoint (){
@@ -45,7 +53,7 @@ class stickyHeader {
                     $(matchingLink).addClass("nav-bar__link-is-current-link");
                     }     
                 },
-                offset: "10%"
+                offset: "30%"
             });
 
             new Waypoint({
