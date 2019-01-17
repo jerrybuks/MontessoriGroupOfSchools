@@ -6,6 +6,7 @@ class stickyHeader {
     constructor(){
         this.lazyImages = $(".lazyload")
         this.navBar = $(".nav-bar");
+        this.btnSmoothScroll = $(".btn-smoothScroll")
         this.TriggerFixedHeader = $('.about');
         this.createHeaderWaypoint();
         this.pageSections = $(".page-section");
@@ -38,6 +39,7 @@ class stickyHeader {
 
     smoothScrollinng(){
         this.navLinks.smoothScroll();
+        this.btnSmoothScroll.smoothScroll();
     }
 
     createPageSectionsWaypoints() {
