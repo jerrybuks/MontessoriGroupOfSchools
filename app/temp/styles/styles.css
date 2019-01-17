@@ -694,8 +694,8 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--Smaller.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--Smaller.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--Smaller.jpg);
     background-size: cover;
     background-repeat: no-repeat;
      text-align: center;
@@ -712,16 +712,16 @@ html, body {
 @media (min-width: 56.25em) {
 
 .header-details {
-         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--small.jpg);
-         background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--small.jpg) /*900*/
+         background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--small.jpg);
+         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--small.jpg) /*900*/
 }
     }
 
 @media (min-width: 56.25em) {
 
 .header-details {
-         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--large.jpg);
-         background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--large.jpg) /*900*/
+         background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--large.jpg);
+         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--large.jpg) /*900*/
 }
     }
 

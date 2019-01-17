@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--Smaller.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--Smaller.jpg);
     background-size: cover;
     background-repeat: no-repeat;
      text-align: center;
@@ -16,10 +17,12 @@
 
     @mixin atMedium{
          background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--small.jpg);
+         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--small.jpg);
      }
 
      @mixin atMedium{
          background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(../../assets/images/school--large.jpg);
+         background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../../assets/images/school--large.jpg);
      }
 
     &__title {
